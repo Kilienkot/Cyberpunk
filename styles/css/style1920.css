@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
 @media (min-width: 1920px) {
   .container {
     width: 60dvw;
@@ -61,22 +62,22 @@
   .hero__block {
     width: 50%;
     height: 30%;
-    background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22624%22%20height%3D%22369%22%20viewBox%3D%220%200%20624%20369%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M624%200H49L0%2050V369H574L624%20319V0Z%22%20fill%3D%22%23F8F200%22%2F%3E%0A%3C%2Fsvg%3E%0A");
-    background-repeat: no-repeat;
-    background-size: contain;
+    -webkit-clip-path: polygon(10% 0%, 100% 0, 100% 20%, 100% 80%, 90% 100%, 0 100%, 0% 80%, 0% 20%);
+            clip-path: polygon(10% 0%, 100% 0, 100% 20%, 100% 80%, 90% 100%, 0 100%, 0% 80%, 0% 20%);
+    background-color: #F8F200;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 8rem;
+    padding: 5rem;
   }
   .hero__block h2 {
     height: 50%;
-    font-size: 2dvw;
+    font-size: 2.5dvw;
   }
   .hero__block a {
     width: 50%;
-    height: 40%;
+    height: 30%;
     font-size: 1dvw;
     display: flex;
     justify-content: center;
@@ -94,6 +95,235 @@
     background-color: transparent;
     color: black;
     transition: 0.5s;
+  }
+  .city {
+    width: 100%;
+    height: 100%;
+  }
+  .city__styles {
+    width: 100%;
+    height: 90dvh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .city__styles h2 {
+    font-size: 3dvw;
+  }
+  .city__styles p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #777777;
+  }
+  .city__styles span {
+    font-weight: 500;
+    color: #52BEDC;
+  }
+  .city__styles .city__pic {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .city__styles .city__pic img {
+    width: 38%;
+    height: 48%;
+  }
+  .city__styles .city__pic .city__styles_bigpic {
+    width: 60%;
+    height: 100%;
+  }
+  .sep {
+    width: 100dvw;
+    height: auto;
+  }
+  .game {
+    width: 100dvw;
+    height: auto;
+    background-color: #000;
+  }
+  .game .game__style {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  .game .game__logo {
+    width: 90%;
+    height: auto;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: end;
+  }
+  .game .game__logo svg {
+    width: 12%;
+    height: auto;
+    margin-right: 1rem;
+  }
+  .game .game__logo h2 {
+    font-size: 3dvw;
+    color: #fff;
+  }
+  .game p {
+    width: 50%;
+    font-size: 1rem;
+    color: #777;
+  }
+  .game p span {
+    font-weight: 500;
+    color: #52BEDC;
+  }
+  .game .game__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  .game .game__content form {
+    padding-top: 4rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .game .game__content .form__input {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 1rem;
+    padding-left: 0;
+    color: #fff;
+    border-bottom: 1px solid #777;
+    margin-bottom: 26px;
+  }
+  .game .game__content .form__input:nth-child(2) {
+    margin-bottom: 36px;
+  }
+  .game .game__content .form-label {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    border: 1px dashed #777;
+    padding: 40px;
+    margin-bottom: 32px;
+    transition: 0.5s;
+  }
+  .game .game__content .form-label:hover {
+    border: 1px solid #777;
+    transition: 0.5s;
+  }
+  .game .game__content .form-label__file {
+    position: absolute;
+    opacity: 0;
+  }
+  .game .game__content .form-label__text {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 18px;
+    border-bottom: 1px solid #fff;
+  }
+  .game .game__content .form-label__text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    outline: 2px solid #fff;
+  }
+  .game .game__content .form-label__file:focus + .form-label__text::after {
+    opacity: 1;
+  }
+  .game .game__content .form-label__images {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .game .game__content .form__btn {
+    margin-bottom: 16px;
+    padding: 19px 50px;
+    color: #000;
+    background-color: #f8f200;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 2px solid #f8f200;
+    transition: 0.5s;
+  }
+  s .game .game__content .form__btn:hover {
+    background-color: #000;
+    color: #f8f200;
+    transition: 0.5s;
+  }
+  .game .game__content .checkbox {
+    position: relative;
+  }
+  .game .game__content .checkbox__input {
+    position: absolute;
+    opacity: 0;
+  }
+  .game .game__content .checkbox__text {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+  }
+  .game .game__content .checkbox__text::before {
+    content: "";
+    margin-right: 10px;
+    width: 14px;
+    height: 14px;
+    box-sizing: border-box;
+    border: 1px solid #777777;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .game .game__content .checkbox__text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    outline: 2px solid #fff;
+  }
+  .game .game__content .checkbox__input:checked + .checkbox__text::before {
+    background-image: url("../../img/check.svg");
+  }
+  .game .game__content .checkbox__input:focus + .checkbox__text::after {
+    opacity: 1;
+  }
+  .game .game__content .game__pic {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .game .game__content .game__pic img {
+    width: 25dvw;
+    height: auto;
   }
 }
 .file-upload {
