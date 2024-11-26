@@ -15,6 +15,8 @@
 
 body {
   font-family: Tektur;
+  width: 100dvw;
+  scroll-behavior: smooth;
 }
 
 @media (min-width: 1024px) and (max-width: 1920px) {
@@ -429,5 +431,142 @@ body {
   }
   .hp .hp__styles .hp__txt_li p {
     margin-left: 1rem;
+  }
+  .buy {
+    width: 100dvw;
+    height: 70dvh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+  }
+  .buy img {
+    width: 30%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .buy .buy__txt {
+    width: 70%;
+    height: 100%;
+    padding-right: 10dvw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2rem;
+  }
+  .buy .buy__txt h2 {
+    height: 20%;
+    font-size: 3dvw;
+    font-weight: 500;
+    color: #fff;
+    align-content: center;
+  }
+  .buy .buy__txt .buy__txt_complect {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .buy .buy__txt .buy__txt_complect h3 {
+    height: 10%;
+    color: #52BEDC;
+    font-size: 2.5dvw;
+    font-weight: 600;
+  }
+  .buy .buy__txt .buy__txt_complect-ul {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .buy .buy__txt .buy__txt_complect-ul .buy__txt_complect-li {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+  }
+  .buy .buy__txt .buy__txt_complect-ul .buy__txt_complect-li p {
+    color: #fff;
+    margin-left: 2rem;
+    font-size: 1dvw;
+  }
+  .buy .buy__txt .buy__txt_complect-ul .buy__txt_complect-li svg {
+    width: 2dvw;
+    height: auto;
+  }
+  .buy .buy__txt .buy__txt_platform {
+    width: 40%;
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .buy .buy__txt .buy__txt_platform a {
+    height: 48%;
+    width: 48%;
+  }
+  .buy .buy__txt .buy__txt_platform svg {
+    width: 100%;
+    height: 100%;
+  }
+  .footer__stules {
+    width: 100%;
+    height: 15dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer__stules .footer__txt {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__stules .footer__txt .footer__txt_svg {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__stules .footer__txt .footer__txt_svg svg {
+    width: auto;
+    height: 90%;
+  }
+  .footer__stules .footer__txt .footer__txt_link {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__stules .footer__txt .footer__txt_link a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s;
+    font-size: 1rem;
+  }
+  .footer__stules .footer__txt .footer__txt_link a:hover {
+    color: #777;
+    transition: 0.5s;
+  }
+  .footer__stules .footer__licensy {
+    width: 100dvw;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=style1024-1920.css.map */
